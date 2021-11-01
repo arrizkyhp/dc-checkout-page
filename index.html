@@ -101,9 +101,9 @@
               </div>
             </div>
             <div class="item-counter">
-              <button class="decrement">-</button>
+              <button class="btn-counter decrement-1">-</button>
               <input type="number" name="quantity-1" min="0" id="quantity-1" value="1">
-              <button class="increment">+</button>
+              <button class="btn-counter increment-1">+</button>
             </div>
           </div>
         </div>
@@ -129,18 +129,23 @@
 
       <div class="checkout-details">
         <div class="checkout-info">
+          <h4 class="checkout-text-item">Vintage Backbag</h4>
+          <p class="checkout-number">$<span id="discount-price-1">54.99</span></p>
+        </div>
+        <div class="checkout-info">
           <h3 class="checkout-text">Shipping</h3>
           <p class="checkout-number">$19</p>
         </div>
         <div class="checkout-info">
           <h3 class="checkout-text">Total</h3>
-          <p class="checkout-number">$149.98</p>
+          <p class="checkout-number">$<span id="total">149.98</span></p>
         </div>
       </div>
     </div>
   </main>
 
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="assets/js/script.js"></script>
 </body>
 

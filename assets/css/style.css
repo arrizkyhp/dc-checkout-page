@@ -349,6 +349,9 @@ form .form-area .form-inputs button.btn:hover {
   align-items: center;
   color: var(--color-dark);
 }
+.checkout-card .checkout-details .checkout-info h4.checkout-text-item {
+  font-size: 12px;
+}
 
 .checkout-card .checkout-details .checkout-info h3.checkout-text {
   font-size: 18px;
