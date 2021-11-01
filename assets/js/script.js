@@ -38,7 +38,10 @@ $(".btn-counter").click( function() {
         inputValue = parseInt($input1.val()) - 1;
         $input1.val(inputValue)
 
-        const price = parseFloat(itemTotal1) - priceItem1;
+        let price = parseFloat(itemTotal1) - priceItem1;
+          if (price == 0) {
+            price = priceItem1;
+          }
         discountPriceFunc1(price.toFixed(2));
         if ($input1.val() == 0) {
             $input1.val(1);
@@ -59,8 +62,13 @@ $(".btn-counter").click( function() {
        inputValue = parseInt($input2.val()) - 1;
        $input2.val(inputValue);
 
-       const price = parseFloat(itemTotal2) - priceItem2;
+       let price = parseFloat(itemTotal2) - priceItem2;
+      if (price == 0) {
+        price = priceItem2
+      }
        discountPriceFunc2(price.toFixed(2));
+
+
        if ($input2.val() == 0) {
          $input2.val(1);
          itemTotal2 = priceItem2;
@@ -88,3 +96,8 @@ $("#quantity-2").bind("keyup mouseup", function () {
   const priceIncrement = parseFloat(priceItem2) * $(this).val();
   discountPriceFunc2(priceIncrement.toFixed(2));
 });
+
+function validateForm() {
+
+  alert("Success!!!")
+}
