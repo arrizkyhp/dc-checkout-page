@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
+
+:root {
+  --font-montserrat: "Montserrat", sans-serif;
+
+  --color-dark: hsla(160, 2%, 31%, 1);
+  --color-orange: hsla(28, 87%, 62%, 1);
+  --color-lighter-orange: rgb(240, 172, 113);
+
+  --color-gray-1: hsla(0, 0%, 20%, 1);
+  --color-gray-2: hsla(0, 0%, 31%, 1);
+  --color-gray-3: hsla(0, 0%, 51%, 1);
+  --color-gray-4: hsla(0, 0%, 74%, 1);
+  --color-gray-5: hsla(0, 0%, 88%, 1);
+  --color-gray-6: hsla(0, 0%, 95%, 1);
+
+  --border-radius: 12px;
+  --border-radius-image: 13px;
+  --border-radius-button: 4px;
+}
+
+body {
+  width: 100%;
+  max-width: 1000px;
+  margin: 65px auto;
+
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+  padding-right: 15px;
+}
+
+h1 {
+  font-size: 36px;
+  color: var(--color-dark);
+  margin-bottom: 50px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 100px;
+  justify-content: space-between;
+}
+
+form.checkout-form {
+  width: 100%;
+  /* max-width: 500px; */
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+form .form-area {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form .form-area h2 {
+  color: var(--color-gray-1);
+  font-size: 18px;
+}
+
+form .form-area .form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form .form-area .form-group {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 7px;
+}
+
+form .form-area .form-group label.form-text {
+  font-size: 12px;
+  color: var(--color-gray-2);
+}
+
+form .form-area .form-group .form-control {
+  height: 56px;
+  font-size: 16px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-gray-3);
+  padding-left: 48px;
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  color: var(--color-gray-3);
+}
+
+form .form-area .form-group .form-control:focus {
+  outline: none;
+  border: 1px solid var(--color-orange);
+}
+
+form .form-area select.form--country {
+  cursor: pointer;
+  background-image: url(../images/keyboard_arrow_down_black_24dp.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 3px) center;
+  background-size: 30px;
+}
+
+form .form-area select.form--country:focus {
+  cursor: pointer;
+  background-image: url(../images/keyboard_arrow_up_black_24dp.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 3px) center;
+  background-size: 30px;
+}
+
+form .form-area .form-group span.form-icon--email::after {
+  font-family: "Material Icons";
+  content: "email";
+  position: absolute;
+  font-size: 20px;
+  top: 40px;
+  left: 15px;
+  color: var(--color-gray-3);
+}
+
+form .form-area .form-group span.form-icon--phone::after {
+  font-family: "Material Icons";
+  content: "call";
+  position: absolute;
+  font-size: 20px;
+  top: 40px;
+  left: 15px;
+  color: var(--color-gray-3);
+}
+
+form .form-area .form-group span.form-icon--fullname::after {
+  font-family: "Material Icons";
+  content: "account_circle";
+  position: absolute;
+  font-size: 20px;
+  top: 40px;
+  left: 15px;
+  color: var(--color-gray-3);
+}
+
+form .form-area .form-group span.form-icon--address::after {
+  font-family: "Material Icons";
+  content: "home";
+  position: absolute;
+  font-size: 20px;
+  top: 40px;
+  left: 15px;
+  color: var(--color-gray-3);
+}
+
+form .form-area .form-group span.form-icon--city::after {
+  font-family: "Material Icons";
+  content: "location_city";
+  position: absolute;
+  font-size: 20px;
+  top: 40px;
+  left: 15px;
+  color: var(--color-gray-3);
+}
+
+form .form-area .form-group span.form-icon--country::after {
+  font-family: "Material Icons";
+  content: "public";
+  position: absolute;
+  font-size: 20px;
+  top: 38px;
+  left: 15px;
+  color: var(--color-gray-3);
+}
+
+form .form-area .form-group span.form-icon--postal_code::after {
+  font-family: "Material Icons";
+  content: "markunread_mailbox";
+  position: absolute;
+  font-size: 20px;
+  top: 40px;
+  left: 15px;
+  color: var(--color-gray-3);
+}
+
+form .form-area .form-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+form .form-area .form-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+form .form-area .form-check input.form-check-input {
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+}
+
+form .form-area .form-check label.form-check-label {
+  font-size: 12px;
+  color: var(--color-gray-2);
+}
+
+form .form-area .form-inputs button.btn {
+  align-self: flex-end;
+  background-color: var(--color-orange);
+  font-family: var(--font-montserrat);
+  color: white;
+  padding: 17px 45px;
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+
+form .form-area .form-inputs button.btn:hover {
+  background-color: var(--color-lighter-orange);
+}
+
+.checkout-card {
+  width: 100%;
+  max-width: 385px;
+  background: var(--color-gray-6);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  padding: 33px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-self: flex-start;
+}
+
+.checkout-card .items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.checkout-card .items .item-group {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.checkout-card .item-group img {
+  width: 100%;
+  min-width: 135px;
+  border-radius: var(--border-radius-image);
+}
+
+.checkout-card .item-group .item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.checkout-card .item-group .item-info .item-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkout-card .item-group .item-detail h3.item-name {
+  font-size: 16px;
+  color: var(--color-dark);
+}
+
+.checkout-card .item-group .item-detail .item-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkout-card .item-group .item-price p.item-price-discount {
+  font-size: 16px;
+  color: orange;
+}
+
+.checkout-card .item-group .item-price p.item-price-original {
+  font-size: 12px;
+  color: var(--color-dark);
+  text-decoration: line-through;
+}
+
+.checkout-card .item-group .item-info .item-counter {
+  /* width: 100%; */
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  max-width: 134px;
+  border: 1px solid var(--color-gray-3);
+  height: 52px;
+  border-radius: var(--border-radius);
+}
+
+.checkout-card .item-group .item-counter input {
+  width: 100%;
+  max-width: 67px;
+  font-size: 16px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-dark);
+  font-family: var(--font-montserrat);
+}
+
+.checkout-card .item-group .item-counter button {
+  background: var(--color-gray-5);
+  color: var(--color-gray-3);
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+  max-width: 25px;
+}
+
+.checkout-card .checkout-details {
+}
+
+.checkout-card .checkout-details .checkout-info {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-gray-4);
+  padding: 10px 0;
+  align-items: center;
+  color: var(--color-dark);
+}
+
+.checkout-card .checkout-details .checkout-info h3.checkout-text {
+  font-size: 18px;
+}
+
+.checkout-card .checkout-details .checkout-info p.checkout-number {
+  font-size: 14px;
+}
