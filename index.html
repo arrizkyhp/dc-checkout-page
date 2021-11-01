@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="assets/images/devchallenges.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Devchallenges | Checkout Page</title>
+
+
+</head>
+
+<body>
+  <h1>Checkout</h1>
+  <main>
+    <form class="checkout-form">
+      <div class="form-area">
+        <h2>Contact information</h2>
+        <div class="form-group">
+          <label for="email" class="form-text">E-mail</label>
+          <input type="email" name="email" id="email" class="form-control form-email" placeholder="Enter your email...">
+        </div>
+        <div class="form-group">
+          <label for="phone" class="form-text">Phone</label>
+          <input type="number" name="phone" id="phone" class="form-control form-phone"
+            placeholder="Enter your phone...">
+        </div>
+      </div>
+
+      <div class="form-area">
+        <h2>Shipping address</h2>
+        <div class="form-group">
+          <label for="fullname" class="form-text">Full name</label>
+          <input type="text" name="fullname" id="fullname" class="form-control form-fullname"
+            placeholder="Your full name...">
+        </div>
+        <div class="form-group">
+          <label for="address" class="form-text">Address</label>
+          <input type="text" name="address" id="address" class="form-control form-address"
+            placeholder="Your address...">
+        </div>
+        <div class="form-group">
+          <label for="city" class="form-text">City</label>
+          <input type="text" name="city" id="city" class="form-control form-city" placeholder="Your city...">
+        </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="country" class="form-text">Country</label>
+            <input type="text" name="country" id="country" class="form-control form-country"
+              placeholder="Your country...">
+          </div>
+          <div class="form-group">
+            <label for="postal_code" class="form-text">Postal code</label>
+            <input type="number" name="postal_code" id="postal_code" class="form-control form-country"
+              placeholder="Your postal code...">
+          </div>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" name="save_check" id="save_check" class="form-check-input">
+          <label for="save_check" class="form-check-label">save this information for next time</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Continue</button>
+      </div>
+
+    </form>
+    <div class="checkout-card">
+      <div class="items">
+        <div class="item-group">
+          <img src="assets/images/photo1.png" alt="black bag" class="image-item">
+          <div class="item-info">
+            <div class="item-detail">
+              <h3 class="item-name">Vintage Backbag</h3>
+              <div class="item-price">
+                <p class="item-price-discount">$54.99</p>
+                <p class="item-price-original">$94.99</p>
+              </div>
+            </div>
+            <div class="item-counter">
+              <button class="decrement">-</button>
+              <input type="number" name="quantity-1" id="quantity-1" value="1">
+              <button class="increment">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-group">
+          <img src="assets/images/photo2.png" alt="black shoes" class="image-item">
+          <div class="item-info">
+            <div class="item-detail">
+              <h3 class="item-name">Levi Shoes</h3>
+              <div class="item-price">
+                <p class="item-price-discount">$74.99</p>
+                <p class="item-price-original">$124.99</p>
+              </div>
+            </div>
+            <div class="item-counter">
+              <button class="decrement">-</button>
+              <input type="number" name="quantity-2" id="quantity-2" value="1">
+              <button class="increment">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="checkout-details">
+        <div class="checkout-info">
+          <h3 class="checkout-text">Shipping</h3>
+          <p class="checkout-number">$19</p>
+        </div>
+        <div class="checkout-info">
+          <h3 class="checkout-text">Total</h3>
+          <p class="checkout-number">$149.98</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
