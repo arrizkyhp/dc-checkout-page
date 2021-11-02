@@ -372,6 +372,7 @@ form .form-area .form-inputs button.btn:hover {
 @media screen and (max-width: 920px) {
   body {
     padding: 20px;
+    max-width: 480px;
   }
 
   main {
@@ -380,6 +381,7 @@ form .form-area .form-inputs button.btn:hover {
 
   main .checkout-card {
     order: 1;
+    max-width: none;
   }
 
   main form.checkout-form {
@@ -388,7 +390,7 @@ form .form-area .form-inputs button.btn:hover {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   body {
     margin-top: 30px;
     padding: 12px;
